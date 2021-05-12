@@ -8,7 +8,7 @@ ENV WORKDIR /photoprism/cron
 
 RUN mkdir -p ${WORKDIR}
 
-ADD . ${WORKDIR}
+ADD cron ${WORKDIR}
 
 RUN chmod +x ${WORKDIR}/*.sh
 
