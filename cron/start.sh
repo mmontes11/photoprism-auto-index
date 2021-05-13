@@ -9,7 +9,7 @@ fi
 
 touch "$LOG"
 
-echo "$PHOTOPRISM_AUTO_INDEX_CRON /photoprism/cron/index.sh 2>> $LOG\\n" > "$CRONTAB"
+printf "$PHOTOPRISM_AUTO_INDEX_CRON /photoprism/cron/index.sh 2>> $LOG\n" > "$CRONTAB"
 crontab "$CRONTAB"
 
 /photoprism/cron/generate-cron.sh
