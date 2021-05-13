@@ -12,6 +12,4 @@ ADD cron ${WORKDIR}
 
 RUN chmod +x ${WORKDIR}/*.sh
 
-RUN crontab ${WORKDIR}/crontab
-
 CMD ${WORKDIR}/start.sh
