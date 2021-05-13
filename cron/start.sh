@@ -3,7 +3,7 @@
 LOG="/var/log/photoprism-cron.log"
 CRONTAB="/photoprism/cron/crontab"
 
-if [ ! -z "$PHOTOPRISM_AUTO_INDEX_CRON" ] then
+if [ ! -z "$PHOTOPRISM_AUTO_INDEX_CRON" ]; then
   PHOTOPRISM_AUTO_INDEX_CRON="* 6 * * *"
 fi
 
